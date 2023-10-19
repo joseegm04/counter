@@ -2,20 +2,21 @@ const decrease = document.getElementsByClassName("btn")[0];
 const reset = document.getElementsByClassName("btn")[1];
 const increase = document.getElementsByClassName("btn")[2];
 
-const contadorHTML = document.getElementsByClassName("count")[0];
-let contador = 0;
+let numeroHTML = document.getElementsByClassName("count")[0];
 
-decrease.addEventListener("click",()=>{
-    contador -= 1;
-    contadorHTML.innerHTML = contador;
+let numero = 0;
+
+decrease.addEventListener("click", () => {
+    numero -= 1;
+    numeroHTML.textContent = numero;
 })
 
-reset.addEventListener("click",()=>{
-    contador = 0;
-    contadorHTML.innerHTML = contador;
+reset.addEventListener("click", () =>{
+    numero = 0;
+    numeroHTML.textContent = numero;
 })
 
-increase.addEventListener("click",()=>{
-    contador += 1;
-    contadorHTML.innerHTML = contador;
+increase.addEventListener("click", () => {
+    numero += 1;
+    numeroHTML.textContent = numero;
 })
